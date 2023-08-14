@@ -34,7 +34,7 @@ function length(){
 function volume(){
     let gallon = inputCount.value * literGallonMult
      gallon = gallon.toFixed(3)
-    let liter = inputCount * gallonLiterMult
+    let liter = inputCount.value * gallonLiterMult
      liter = liter.toFixed(3)
 
      document.getElementById("output-volume").textContent = `
@@ -45,7 +45,7 @@ function volume(){
 function weight(){
     let pound = inputCount.value * kiloPoundMult
      pound = pound.toFixed(3)
-    let kilo = inputCount * poundKiloMult
+    let kilo = inputCount.value * poundKiloMult
      kilo = kilo.toFixed(3)
 
      document.getElementById("output-weight").textContent = `
